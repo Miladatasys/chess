@@ -1,0 +1,25 @@
+# Unreal Engine ignores
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+*.xcconfig
+*.gemspec
+*.rb
+*.rake
+*.gemspec
+*.pdb
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore intermediate build files, binaries, and saved files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Ignore project specific settings
+.vscode/
+.idea/
+.vs/
