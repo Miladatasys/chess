@@ -24,9 +24,8 @@ RUN mkdir -p ${ANDROID_SDK_ROOT}/cmdline-tools \
 RUN yes | sdkmanager --licenses \
     && sdkmanager "platform-tools" "platforms;android-32" "build-tools;32.0.0" "ndk;21.3.6528147"
 
-# Configurar el proyecto de Unreal Engine
-# (asumiendo que lo clonarás desde un repositorio o ya está en tu máquina local)
-RUN git clone https://github.com/yourusername/your-unreal-engine-project.git /usr/src/app
+# Configurar el proyecto de Unreal Engine desde el repositorio GitHub
+RUN git clone https://github.com/Miladatasys/chess.git /usr/src/app
 
 # Directorio de trabajo
 WORKDIR /usr/src/app
